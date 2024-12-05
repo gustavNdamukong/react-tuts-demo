@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//import HelloWorld from './HelloWorld';
+import AppClass from './AppClass';
+//import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-8 col-md-8 col-lg-8 offset-4">
+          <AppClass msg="State using classes!" />
+          {/* <App msg="State using functional component!" /> */}
+        </div>
+      </div>
+    </div>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
